@@ -1,0 +1,255 @@
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(assets/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato-Black';
+    src: url(assets/Lato-Black.ttf);   
+}
+@font-face {
+    font-family: 'Lato-Light';
+src: url(assets/Lato-Light.ttf);
+}
+@font-face {
+    font-family: 'Lato-Bold';
+src: url(assets/Lato-Bold.ttf);
+}
+
+.container {
+    display: grid;
+    max-width: 1020px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    grid-template-areas: "header header header"
+                        "left slider right"
+                        "describe describe describe"   
+                       "footer footer footer";
+    grid-template-columns: 60px 900px 60px;
+    grid-template-rows: 95px 601px 210px 290px;
+    border-bottom: 6px solid #fff;
+    
+}
+
+.container .header {
+ grid-area: header;
+ display: grid;   
+ grid-template-columns: 180px 840px;
+ grid-template-areas: "logo navigation";
+ background-color: #2d303a;
+ border-bottom: 6px solid #323746 ;
+ 
+}
+.logo {
+    grid-area: logo;
+    padding-left: 40px;
+    padding-top: 12px;
+}
+.logo h1 {
+    font-family: 'Lato-Bold';
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -0.9px;
+}
+.logo h1::after {
+    content: "*";
+    color: #ea676b;
+}
+.navigation {
+    grid-area: navigation;
+    justify-self: end;
+    padding-top: 23px;
+    padding-right: 40px;
+    }
+.nav {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+   
+    }
+
+.nav  li a {
+    font-family: 'Lato-Bold', sans-serif;
+    font-size: 12px;
+    color: #fff;
+   text-decoration: none;
+    
+       
+   }
+   .nav li {
+       padding-left: 15px;
+       margin-left: 14px;
+       position: relative;
+   }
+   .nav li::before {
+       display: block;
+       content: '';
+       width: 3px;
+       height: 3px;
+       top: 50%;
+       background-image: url(assets/point.png);
+       position: absolute;
+       left: 0px;
+      }
+.nav li:first-child::before{
+        display: none;
+    }
+.nav li:first-child{
+        padding-left: 0px;
+        margin-left: 0px;  
+    }
+.nav li:hover a {
+       color: #f06c64;
+   }
+.left {
+    grid-area: left;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+    padding-left:40px;
+    padding-top: 281px;
+} 
+.left img:hover {
+    filter: brightness(0.4);
+}
+
+  
+.slider {
+ grid-area: slider;
+ background-color: #f06c64;
+ padding-left: 52px;
+ padding-top: 53px;
+ border-bottom: 6px solid #ea676b
+}
+.right {
+    grid-area: right;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+    padding-right: 40px;
+    padding-top: 281px;
+}
+.right img:hover {
+    filter: brightness(0.4);
+}
+.describe {
+    grid-area: describe;
+    background-color: #f2f2f2;
+}
+.describe h2 {
+    font-family: 'Lato-Black', sans-serif;
+    font-size: 30px;
+    color: #666d89;
+    padding-left: 40px;
+    padding-top: 34px;
+    margin-bottom: 0;
+}
+.describe p {
+    font-family: 'Lato-Light', sans-serif;
+    font-size: 18px;
+    color: #9ca1b6;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 30px;
+    letter-spacing: -0.01px;
+}
+ .container .footer {
+     
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "pencil item1  ideas item2 love item3 "
+                         "iphone item4 support item5 star item6 ";
+    grid-template-columns: 110px 240px 80px 240px 80px 270px;
+    grid-template-rows: 130px 160px; 
+    
+ }
+ .container .footer p {
+     font-family: 'Lato-Regular', sans-serif;
+     color: #767e9e;
+     font-size: 12px;
+     line-height: 20.9px;
+ }
+
+
+.container .footer h3 {
+   font-family: 'Lato-Black', sans-serif;
+   color: #666d89;
+   font-size: 18px;
+   margin: 0 auto;
+   position: relative;
+  
+} 
+.pencil  {
+    grid-area: pencil;
+    background-color: #f2f2f2;
+    padding-left: 41px;
+    padding-top: 10px;
+}
+.item1 {
+    grid-area: item1;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.ideas {
+    grid-area: ideas;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.item2 {grid-area: item2;background-color: #f2f2f2;padding-left: 9px;padding-top: 6px;}
+
+.love {
+    grid-area: love;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.item3 {
+    grid-area: item3;
+    background-color: #f2f2f2;
+    padding-left: 11px;
+    padding-top: 5px;
+    padding-right: 19px;
+}
+
+.iphone {
+    grid-area: iphone;
+    background-color: #f2f2f2;
+    padding-left: 41px;
+    padding-top: 1px;
+}
+.item4 {
+    grid-area: item4;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-top: 0px;
+}
+
+.support {
+    grid-area: support;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-top: 1px;
+}
+.item5 {
+    grid-area: item5;
+    background-color: #f2f2f2;
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
+.star {
+    grid-area: star;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-top: 1px;
+}
+.item6 {
+    grid-area: item6;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-right: 46px;
+}
