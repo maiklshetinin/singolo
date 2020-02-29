@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'Lato-Black';
+    src: url(assets/Lato-Black.ttf);   
+}
+@font-face {
+    font-family: 'Lato-Light';
+    src: url(assets/Lato-Light.ttf);
+}
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(assets/Lato-Regular.ttf);
+}
+
+.container {
+    display: grid;
+    max-width: 1020px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    grid-template-areas: "portfolio"
+                         "AboutUs";
+    grid-template-columns: 1020px;
+    grid-template-rows: 870px 734px;
+
+
+}
+.container .portfolio {
+    display: grid;
+    grid-area: portfolio;
+    grid-template-areas: " header header header header"
+                         " describe describe describe describe"
+                           "navigation navigation navigation navigation "
+                          " image01 image02 image03 image04"
+                          " image05 image06 image07 image08"
+                          " image09 image10 image11 image12";                   
+    border-bottom: 6px solid #323746;
+    background-color: #2d303a;
+    grid-template-columns: 270px 240px 240px 270px;
+    grid-template-rows: 90px 56px 50px 189px 207px 278px;  
+}
+.header {
+    grid-area: header;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.header h1 {
+    font-family: 'Lato-Black', sans-serif;
+    font-size: 30px;
+    color: #666d89;
+    letter-spacing: -0.2px;
+}
+.describe {
+    grid-area: describe;
+    padding-left: 40px;
+    padding-top: 14px;
+    padding-right: 40px;
+}
+.describe p {
+    padding-top: 14px;
+    font-family: 'Lato-Light',sans-serif;
+    font-size: 18px;
+    color: #767e9e;
+    margin-top: 0;
+    letter-spacing: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.navigation {
+    grid-area: navigation;
+    margin-top: 0px;
+}
+.nav {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0px;
+    padding-top: 9px;
+}
+.nav  li {
+    list-style-type: none;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    font-family: 'Lato-Regular', sans-serif;
+    color: #767e9e;
+    font-size: 12px;
+}
+.nav  li a {
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 12px;
+    color: #767e9e;
+    text-decoration: none;
+}
+.nav li:hover  {
+    border-color: #c5c5c5;
+}
+.nav li:hover a {
+    color: #dedede;
+}
+.all {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 7px;
+    margin-left: 1px;
+    margin-right: 0px;
+}
+.web {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 7px;
+    margin-left: -2px;
+    letter-spacing: 0.25px;
+}
+.graphic {
+    margin-left: -2px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 4px;
+}
+.art {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 5px;
+    margin-left: -2px;
+}
+.image01 {
+  grid-area: image01;
+  padding-left: 40px;  
+}
+
+.image02 {
+    grid-area: image02;
+    padding-left: 10px;
+  }
+.image03 {
+    grid-area: image03;
+    padding-left: 10px;
+}
+.image04 {
+    grid-area: image04;
+    padding-left: 10px;
+}
+.image05 {
+    grid-area: image05;
+    padding-left: 40px;
+    padding-top: 18px;
+}
+.image06 {
+    grid-area: image06;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+.image07 {
+    grid-area: image07;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+.image08 {
+    grid-area: image08;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+.image09 {
+    grid-area: image09;
+    padding-left: 40px;
+    padding-top: 18px;
+}
+.image10 {
+    grid-area: image10;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+.image11 {
+    grid-area: image11;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+.image12 {
+    grid-area: image12;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+.container .AboutUs {
+    display: grid;
+    grid-area: AboutUs;
+    grid-template-areas: 
+                         " describe describe describe "
+                          " foto01 foto02 foto03"
+                          " Adam Desmond Scolara"
+                          " socialAdam socialDesmond socialScolara";                   
+    border-bottom: 6px solid #ffffff;
+    background-color: #f2f2f2;
+    grid-template-columns: 350px 320px 350px;
+    grid-template-rows: 218px 300px 100px 116px;  
+}
+
+.AboutUs .describe h2 {
+    margin-bottom: 0px;
+    font-family: 'Lato-Black', sans-serif;
+    font-size: 30px;
+    color: #666d89;
+    padding-top: 20px;
+    letter-spacing: -0.2px;
+}
+.AboutUs .describe p {
+    font-family: 'Lato-Light',sans-serif;
+    font-size: 18px;
+    color: #767e9e;
+    padding-top: 18px;
+    line-height: 30px;
+    letter-spacing: 0.13px;
+}
+.AboutUs  h2 {
+    margin-bottom: 0px;
+    font-family: 'Lato-Black', sans-serif;
+    font-size: 18px;
+    color: #666d89;
+    
+    letter-spacing: -0.2px;
+}
+.AboutUs  p {
+    font-family: 'Lato-Light',sans-serif;
+    font-size: 12px;
+    color: #767e9e;
+    margin-top: 0px;
+    letter-spacing: 0.1px;
+    padding-top: 8px;
+    line-height: 21.56px;
+}
+
+.foto01 {
+    grid-area: foto01;
+    padding-left: 40px;
+}
+.Adam {
+    grid-area: Adam;
+    padding-left: 39px;
+}
+
+.foto02 {
+    grid-area: foto02;
+    padding-left: 9px;
+}
+.Desmond {
+    grid-area: Desmond;
+    padding-left: 9px;
+    padding-right: 10px;
+}
+.Desmond p {
+    letter-spacing: 0.25px;
+}
+.foto03 {
+    grid-area: foto03;
+    padding-left: 10px;
+}
+.Scolara {
+    grid-area: Scolara;
+    padding-left: 9px;
+    padding-right: 40px;
+}
+.Scolara p {
+    letter-spacing: 0.2px;
+}
+.socialAdam {
+    grid-area: socialAdam;
+    padding-top: 11px;
+    padding-left: 41px;
+}
+.socialAdam img {
+    padding-right: 4px;
+}
+.socialDesmond {
+    grid-area: socialDesmond;
+    padding-top: 11px;
+    padding-left: 10px;
+}
+.socialDesmond img {
+    padding-right: 4px;
+
+}
+.socialScolara  {
+    grid-area: socialScolara;
+    padding-top: 11px;
+    padding-left: 10px;
+}
+.socialScolara img {
+    padding-right: 4px;
+}
+.socialAdam a:hover {
+    filter: brightness(0.4);
+}
+.socialDesmond img:hover {
+    filter: brightness(0.4);
+}
+.socialScolara img:hover {
+    filter: brightness(0.4);
+}
