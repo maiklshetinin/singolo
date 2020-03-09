@@ -539,10 +539,10 @@ src: url(assets/Lato-Bold.ttf);
 .containerSingolo2 .socialAdam a:hover {
     filter: brightness(0.4);
 }
-.containerSingolo2.socialDesmond a:hover {
+.containerSingolo2 .socialDesmond a:hover {
     filter: brightness(0.4);
 }
-.containerSingolo2.socialScolara a:hover {
+.containerSingolo2 .socialScolara a:hover {
     filter: brightness(0.4);
 }
 .containerSingolo3 {
